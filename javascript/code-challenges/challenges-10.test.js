@@ -9,6 +9,7 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 function returnTen(str){
   // Solution code here...
+  return str.split('').splice(-10, 10);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -27,6 +28,9 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
+  let max=0
+  matrix.map(item=>item.map(ele=> ele > max ? max = ele : max = max))
+  return max
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -45,6 +49,9 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
+  let sum=0
+  matrix.map(item=>item.map(ele=> sum+=ele))
+  return sum
 };
 
 
@@ -73,6 +80,15 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 const grandTotal = (stores) => {
   // Solution code here...
 
+  let sum =[...stores[0]];
+  console.log(sum);
+  for (let i = 1; i < stores.length; i++) {
+    for (let j = 0; j <sum.length; j++) {
+      sum[j] += stores[i][j];
+    }
+  }
+  return sum;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -87,6 +103,11 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  let result = [];
+  hours.map((element, index) => {
+    result.push({ sales: `${data[index]} cookies`, time: element });
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -112,6 +133,9 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  let result
+  arr.map(item=>item.items.map(ele=>ele.name==='Treats'?result= ele.quantity:""))
+  return result
 };
 
 /* ------------------------------------------------------------------------------------------------
