@@ -167,7 +167,6 @@ let findShortest = (data) => {
     }
     
   })
-  console.log(result);
   return result
 };
 
