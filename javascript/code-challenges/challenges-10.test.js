@@ -81,7 +81,6 @@ const grandTotal = (stores) => {
   // Solution code here...
 
   let sum =[...stores[0]];
-  console.log(sum);
   for (let i = 1; i < stores.length; i++) {
     for (let j = 0; j <sum.length; j++) {
       sum[j] += stores[i][j];
