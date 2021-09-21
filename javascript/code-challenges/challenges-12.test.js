@@ -71,10 +71,8 @@ const validateEmail = (email) => {
   // Solution code here...
 //  let result =  /^([\s\@]?[a-zA-Z]+)+$/.test(email)
 //  console.log(result);
-const re =/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/ ;
-    let result1 = re.test(String(email));
-    console.log(result1);
-    
+const reg =/^([a-zA-Z]+|[a-zA-Z]+\.[a-zA-Z]+)@([a-zA-Z]+\.)+((com)|(net)|(org))$/ ;
+    let result1 = reg.test(String(email));    
     return result1
 
 };
@@ -102,6 +100,9 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
+  let reg = /^((\(\d{3}\))|\d{3})(\s|\-)?\d{3}(\s|\-)?\d{4}$/;
+  let result = reg.test(String(phoneNumber))
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
