@@ -12,6 +12,8 @@ Write a function named screenForNames that takes in an array of strings and uses
 
 const screenForNames = (arr) => {
   // Solution code here...
+  let reg = /^(Mr.|Mrs.|Ms.|Dr.)\s\S/g;
+  return arr.filter(elem => reg.test(elem))
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -104,7 +106,7 @@ let biggerThanLuke = (arr) => {
   // Solution code here...
   let result = []
   let max 
-  let name = arr.map(item=>item.name.includes('Luke')? max=item.mass : '')
+  arr.map(item=>item.name.includes('Luke')? max=item.mass : '')
    arr.map(item=>{
     if(Number(item.mass)>max){
       
@@ -133,13 +135,9 @@ This data could be sorted by name or price.
 
 const sortBy = (property, arr) => {
   // Solution code here...
-  let result =[]
   
-  
- let sort= ( property==='price'?arr.sort((first, second) => (first.price - second.price)):arr.sort((first, second) => (first.name.length - second.name.length)))
- result.push(sort)
- console.log(result);
-  return(result)
+  return arr.sort((a, b) => a[property] > b[property] ? 1 : -1)
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -156,6 +154,7 @@ https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
   // Solution code here...
+  return url.startsWith('https://');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -240,6 +239,7 @@ describe('Testing challenge 4', () => {
       { name: 'Bookmark', price: 2.50 },
       { name: 'Sweatshirt', price: 45 },
       { name: 'Tote bag', price: 15 },
+    
     ]);
   });
 });
