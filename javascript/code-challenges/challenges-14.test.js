@@ -108,13 +108,13 @@ let biggerThanLuke = (arr) => {
    arr.map(item=>{
     if(Number(item.mass)>max){
       
-      result.push (item.name+' - ')
+      result.push (item.name)
 
     }
     
   })
   
-  return (result.join('').slice(0,-3))
+  return (result.join(' - '))
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -133,6 +133,13 @@ This data could be sorted by name or price.
 
 const sortBy = (property, arr) => {
   // Solution code here...
+  let result =[]
+  
+  
+ let sort= ( property==='price'?arr.sort((first, second) => (first.price - second.price)):arr.sort((first, second) => (first.name.length - second.name.length)))
+ result.push(sort)
+ console.log(result);
+  return(result)
 };
 
 /* ------------------------------------------------------------------------------------------------
