@@ -1,8 +1,10 @@
 def insertShiftArray(arr,insert):
-
+    result=[]
     length = ceil(len(arr)/2)
-    result= arr+[insert]
-    result[length],result[len(result)-1]=result[len(result)-1],result[length]
+    for i in range(len(arr)):
+        if i==length:
+            result=result+[insert]
+        result=result+[arr[i]]
     return result
 
 def ceil(num):
@@ -11,4 +13,4 @@ def ceil(num):
         return floor + 1
     return floor
 
-print(insertShiftArray([1,2,3,4,5],7))
+print(insertShiftArray([1,2,4,5],7))
