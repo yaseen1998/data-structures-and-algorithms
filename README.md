@@ -24,7 +24,8 @@ To run your tests
 
 ## Table of Contents
 
- Challenge Name |                      Challenge link                                      |
-:------------:  | :------------------------------------------------------:                 |
-array-reverse   | [solution Challenge 1](./python/code_challenges/array-reverse/README.md) |
-array-insert-shift   | [solution Challenge 1](./python/code_challenges/array-insert-shift/README.md) |
+ Challenge Name       |                      Challenge link                                             |
+:------------:        | :------------------------------------------------------:                        |
+array-reverse         | [solution Challenge 1](./python/code_challenges/array-reverse/README.md)        |
+array-insert-shift    | [solution Challenge 2](./python/code_challenges/array-insert-shift/README.md)   |
+array-binary-search   | [solution Challenge 3](./python/code_challenges/array-binary-search/README.md)  |
