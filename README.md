@@ -27,4 +27,4 @@ To run your tests
  Challenge Name |                      Challenge link                                      |
 :------------:  | :------------------------------------------------------:                 |
 array-reverse   | [solution Challenge 1](./python/code_challenges/array-reverse/README.md) |
-array-insert-shift   | [solution Challenge 1](./python/code_challenges/array-insert-shift/README.md) |
+array-insert-shift   | [solution Challenge 2](./python/code_challenges/array-insert-shift/README.md) |

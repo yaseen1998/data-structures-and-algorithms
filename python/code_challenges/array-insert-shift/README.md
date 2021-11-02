@@ -6,4 +6,4 @@ utilizing any of the built-in methods available
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-<img src = './Whiteboard.png'/>
+<img src = './array-insert-shift.png'/>
