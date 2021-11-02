@@ -6,4 +6,4 @@ utilizing any of the built-in methods available
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-<img src = './Whiteboard(1).png'/>
+<img src = './Whiteboard.png'/>
