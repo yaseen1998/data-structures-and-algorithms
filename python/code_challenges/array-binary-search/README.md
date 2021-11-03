@@ -1,4 +1,4 @@
-# Reverse an Array
+# # Binary Search of Sorted Array
 <!-- Description of the challenge -->
 search by using binarry search
 by find mid and then check the number if large or small the mid
