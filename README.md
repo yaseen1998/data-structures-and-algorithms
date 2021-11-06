@@ -29,3 +29,4 @@ To run your tests
 array-reverse         | [solution Challenge 1](./python/code_challenges/array-reverse/README.md)        |
 array-insert-shift    | [solution Challenge 2](./python/code_challenges/array-insert-shift/README.md)   |
 array-binary-search   | [solution Challenge 3](./python/code_challenges/array-binary-search/README.md)  |
+linked-list   | [solution Challenge 5](./python/code_challenges/linked-list/README.md)  |
