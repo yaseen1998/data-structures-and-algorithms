@@ -31,3 +31,4 @@ array-insert-shift    | [solution Challenge 2](./python/code_challenges/array-in
 array-binary-search   | [solution Challenge 3](./python/code_challenges/array-binary-search/README.md)  |
 interview   | [solution Challenge 4](./python/code_challenges/interview/README.md)  |
 linked-list   | [solution Challenge 5](./python/code_challenges/linked-list/README.md)  |
+linked-list-insertions   | [solution Challenge 6](./python/code_challenges/linked-list-insertions/README.md)  |
