@@ -32,3 +32,5 @@ array-binary-search   | [solution Challenge 3](./python/code_challenges/array-bi
 interview   | [solution Challenge 4](./python/code_challenges/interview/README.md)  |
 linked-list   | [solution Challenge 5](./python/code_challenges/linked-list/README.md)  |
 linked-list-insertions   | [solution Challenge 6](./python/code_challenges/linked-list-insertions/README.md)  |
+linked-list-kth   | [solution Challenge 7](./python/code_challenges/linked-list-kth/README.md)  |
+linked-list-zip   | [solution Challenge 8](./python/code_challenges/linked-list-zip/README.md)  |
