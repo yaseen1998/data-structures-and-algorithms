@@ -34,3 +34,4 @@ linked-list   | [solution Challenge 5](./python/code_challenges/linked-list/READ
 linked-list-insertions   | [solution Challenge 6](./python/code_challenges/linked-list-insertions/README.md)  |
 linked-list-kth   | [solution Challenge 7](./python/code_challenges/linked-list-kth/README.md)  |
 linked-list-zip   | [solution Challenge 8](./python/code_challenges/linked-list-zip/README.md)  |
+stack-and-queue  | [solution Challenge 9](./python/code_challenges/stack-and-queue/README.md)  |
