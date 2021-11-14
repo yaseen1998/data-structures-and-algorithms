@@ -35,9 +35,9 @@ class Stack:
 
     def isEmpty(self):
         if self.topval == None:
-            return False
-        else:
             return True
+        else:
+            return False
 
 if __name__ == "__main__":
     stack = Stack()
