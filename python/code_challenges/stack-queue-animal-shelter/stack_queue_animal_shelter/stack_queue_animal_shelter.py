@@ -24,6 +24,7 @@ class AnimalShelter():
                 return
             self.rearCat.nextval = animel
             self.rearCat = animel
+            
         if animel.type=="dog":
             if self.rearDog == None:
                 self.frontDog = self.rearDog = animel
