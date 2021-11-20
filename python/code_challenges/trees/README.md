@@ -26,4 +26,16 @@ method four : print_tree it print data
 
 class BST:(binary search tree) :
 method one add : it add new data in tree and arrange it
-method two contains : it check if tree includes the specific number or not
+method two contains : it
+
+## test
+Can successfully instantiate an empty tree test 4
+Can successfully instantiate a tree with a single root node test 5
+Can successfully add a left child and right child to a single root node in function
+Can successfully return a collection from a preorder traversal test 1
+Can successfully return a collection from an inorder traversal test 2
+Can successfully return a collection from a postorder traversal test 3
+binary search contain false test 7
+binary search contain true test 8
+print binary search test 6
+
