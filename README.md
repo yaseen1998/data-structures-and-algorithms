@@ -35,4 +35,5 @@ linked-list-insertions   | [solution Challenge 6](./python/code_challenges/linke
 linked-list-kth   | [solution Challenge 7](./python/code_challenges/linked-list-kth/README.md)  |
 linked-list-zip   | [solution Challenge 8](./python/code_challenges/linked-list-zip/README.md)  |
 stack-and-queue  | [solution Challenge 9](./python/code_challenges/stack-and-queue/README.md)  |
-stack_queue_pseudo  | [solution Challenge 100](./python/code_challenges/stack_queue_pseudo/README.md)  |
+stack_queue_pseudo  | [solution Challenge 10](./python/code_challenges/stack_queue_pseudo/README.md)  |
+Insertion_sort  | [solution Challenge 26](./python/code_challenges/Insertion_Sort/BLOG.md)  |
