@@ -21,11 +21,11 @@ class LinkedList:
 
 
 
-    def to_string(self):
+    def __str__(self):
         result = []
         current = self.head
         while current:
             result.append(current.value)
             current = current.next
-        return result
+        return f'{result}'
 
