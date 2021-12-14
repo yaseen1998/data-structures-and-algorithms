@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "left_join"
+version = "0.1.0"
+description = ""
+authors = ["yaseen1998 <yasseenkouthe@eng.hu.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+hashtable-python = "^1.0.3"
+matplotlib = "^3.5.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^21.12b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
