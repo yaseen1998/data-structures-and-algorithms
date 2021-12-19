@@ -1,6 +1,8 @@
 
 from graph import __version__
 from graph.graph import Graph
+from graph.breath import GraphBfs
+
 import pytest
 def test_version():
     assert __version__ == '0.1.0'
@@ -56,9 +58,37 @@ def test_empty_graph():
     expected = 'null'
     assert actual == expected
 
+def test_collection_of_nodes(graphbfs):
+    Graph,node1 = graphbfs
+    expected = [1, 2, 3, 4,5,6]
+    actual = Graph.breath_first(node1)
+    assert expected ==  actual
 @pytest.fixture
 def graph():
     graph = Graph()
+    node1=graph.add_node(1)
+    node2=graph.add_node(2)
+    node3=graph.add_node(3)
+    node4=graph.add_node(4)
+    node5=graph.add_node(5)
+    node6=graph.add_node(6)
+    # node1 : node2,3,4
+    graph.add_edge(node1, node2)
+    graph.add_edge(node1, node3)
+    graph.add_edge(node1, node4)
+
+    # node3: node5,6
+    graph.add_edge(node3, node5)
+    graph.add_edge(node3, node6)
+
+    # node4 : node6
+    graph.add_edge(node4, node5)
+
+    return graph,node1
+
+@pytest.fixture
+def graphbfs():
+    graph = GraphBfs()
     node1=graph.add_node(1)
     node2=graph.add_node(2)
     node3=graph.add_node(3)
