@@ -1,5 +1,5 @@
 from graph_business_trip import __version__
-from graph_business_trip.graph import Graph
+from graph_business_trip.graph import Graph,graph_depth_first
 import pytest
 
 # def test_version():
@@ -24,6 +24,29 @@ def test_multi_graph_false(graph):
     expected = graph.business_trip(['amman','jarash','aqabe'])
     actual = (False, '$20')
     assert actual==expected
+    
+def test_breadth():
+    g=Graph()
+    a=g.add_node('a')
+    b=g.add_node('b')
+    c=g.add_node('c')
+
+    g.add_edge(a,b,5)
+    g.add_edge(b,c,4)  
+    g.add_edge(c,a,3)
+    g.add_edge(b,a,1)
+
+
+    graph = {"A":["B","C", "D"],
+           "B":["E"],
+           "C":["F","G"],
+           "D":["H"],
+           "E":["I"],
+           "F":["J"]}
+    
+    expected =graph_depth_first(graph, "A")
+    actual = 'A D H C G F J B E I'
+    assert actual == expected
 
 
 @pytest.fixture
